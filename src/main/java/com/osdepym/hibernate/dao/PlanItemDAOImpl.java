@@ -39,28 +39,17 @@ public class PlanItemDAOImpl implements PlanItemDAO{
 
 	@Override
 	public PlanItem get(Long id) throws CustomException {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public void save(PlanItem t) throws CustomException {
-		// TODO Auto-generated method stub
-		
-	}
+	public void save(PlanItem t) throws CustomException {}
 
 	@Override
-	public void update(PlanItem t) throws CustomException {
-		// TODO Auto-generated method stub
-		
-	}
+	public void update(PlanItem t) throws CustomException {}
 
 	@Override
-	public void delete(PlanItem t) throws CustomException {
-		// TODO Auto-generated method stub
-		
-	}
-
+	public void delete(PlanItem t) throws CustomException {}
 
 	@SuppressWarnings("unchecked")
 	@Override

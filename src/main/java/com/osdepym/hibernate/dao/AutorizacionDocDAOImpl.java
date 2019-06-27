@@ -24,33 +24,22 @@ public class AutorizacionDocDAOImpl implements AutorizacionDocDAO{
 	
 	@Override
 	public AutorizacionDoc get(Long id) throws CustomException {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public List<AutorizacionDoc> getAll() throws CustomException {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public void save(AutorizacionDoc t) throws CustomException {
-		// TODO Auto-generated method stub
-		
-	}
+	public void save(AutorizacionDoc t) throws CustomException {}
 
 	@Override
-	public void update(AutorizacionDoc t) throws CustomException {
-		// TODO Auto-generated method stub
-		
-	}
+	public void update(AutorizacionDoc t) throws CustomException {}
 
 	@Override
-	public void delete(AutorizacionDoc t) throws CustomException {
-		// TODO Auto-generated method stub
-		
-	}
+	public void delete(AutorizacionDoc t) throws CustomException {}
 
 	@Override
 	public List<String> getDocumentosByIdEspecialidadYIdPrestacion(Long idEspecialidad, Long idPrestacion) throws CustomException {

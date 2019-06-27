@@ -28,22 +28,13 @@ public class BeneficiarioDAOImpl implements BeneficiarioDAO {
 	}
 
 	@Override
-	public void save(Beneficiario t) throws CustomException {
-		// TODO Auto-generated method stub
-		
-	}
+	public void save(Beneficiario t) throws CustomException {}
 
 	@Override
-	public void update(Beneficiario t) throws CustomException {
-		// TODO Auto-generated method stub
-		
-	}
+	public void update(Beneficiario t) throws CustomException {}
 
 	@Override
-	public void delete(Beneficiario t) throws CustomException {
-		// TODO Auto-generated method stub
-		
-	}
+	public void delete(Beneficiario t) throws CustomException {}
 
 	@Override
 	public List<Beneficiario> getAll() throws CustomException {

@@ -30,7 +30,6 @@ public class EspecialidadPrestacionDAOImpl implements EspecialidadPrestacionDAO{
 	
 	@Override
 	public EspecialidadPrestacion get(Long id) throws CustomException {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
@@ -47,22 +46,13 @@ public class EspecialidadPrestacionDAOImpl implements EspecialidadPrestacionDAO{
 	}
 
 	@Override
-	public void save(EspecialidadPrestacion t) throws CustomException {
-		// TODO Auto-generated method stub
-		
-	}
+	public void save(EspecialidadPrestacion t) throws CustomException {}
 
 	@Override
-	public void update(EspecialidadPrestacion t) throws CustomException {
-		// TODO Auto-generated method stub
-		
-	}
+	public void update(EspecialidadPrestacion t) throws CustomException {}
 
 	@Override
-	public void delete(EspecialidadPrestacion t) throws CustomException {
-		// TODO Auto-generated method stub
-		
-	}
+	public void delete(EspecialidadPrestacion t) throws CustomException {}
 
 	@Override
 	public List<Prestacion> getPrestacionesByEspecialidadId(Long idEspecialidad) throws CustomException {

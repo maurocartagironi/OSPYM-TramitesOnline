@@ -23,7 +23,6 @@ public class MotivoDAOImpl implements MotivoDAO{
 	
 	@Override
 	public Motivo get(Long id) throws CustomException {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
@@ -40,21 +39,12 @@ public class MotivoDAOImpl implements MotivoDAO{
 	}
 
 	@Override
-	public void save(Motivo t) throws CustomException {
-		// TODO Auto-generated method stub
-		
-	}
+	public void save(Motivo t) throws CustomException {}
 
 	@Override
-	public void update(Motivo t) throws CustomException {
-		// TODO Auto-generated method stub
-		
-	}
+	public void update(Motivo t) throws CustomException {}
 
 	@Override
-	public void delete(Motivo t) throws CustomException {
-		// TODO Auto-generated method stub
-		
-	}
+	public void delete(Motivo t) throws CustomException {}
 
 }
