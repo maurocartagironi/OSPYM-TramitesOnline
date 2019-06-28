@@ -1,6 +1,7 @@
 package com.osdepym.service;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map.Entry;
@@ -82,7 +83,7 @@ public class PlanWebServiceImpl implements PlanWebService {
 									new ArrayList<PlanItemDTO>()));
 				}
 					itemMap.put(item.getIdPlanItem(),
-							new PlanItemDTO(item.getIdPlanItem(), item.getTitulo(), item.getValor(), new ArrayList<PlanItemDTO>()));
+							new PlanItemDTO(item.getIdPlanItem(), item.getTitulo(), item.getValor(), new ArrayList<PlanItemDTO>(), null));
 					itemToSection.put(item.getIdPlanItem(), item.getSeccion().getIdPlanSeccion());
 				
 			} else {
@@ -94,7 +95,7 @@ public class PlanWebServiceImpl implements PlanWebService {
 			if (itemMap.get((Long) subitem.getItemPadre().getIdPlanItem()) != null) {
 				PlanItemDTO parent = itemMap.get((Long) subitem.getItemPadre().getIdPlanItem());
 				List<PlanItemDTO> childItemList = parent.getSubitemsList();
-				childItemList.add(new PlanItemDTO(subitem.getIdPlanItem(), subitem.getTitulo(), subitem.getValor(), new ArrayList<PlanItemDTO>()));
+				childItemList.add(new PlanItemDTO(subitem.getIdPlanItem(), subitem.getTitulo(), subitem.getValor(), new ArrayList<PlanItemDTO>(), subitem.getItemPadre() != null ? new PlanItemDTO() : null));
 				parent.setSubitemsList(childItemList);
 				itemMap.put((Long) subitem.getItemPadre().getIdPlanItem(), parent);
 			}
@@ -108,8 +109,21 @@ public class PlanWebServiceImpl implements PlanWebService {
 			seccionMap.put(itemToSection.get(entry.getValue().getId()), seccion);
 		}
 		
-		return new ArrayList<PlanSeccionDTO>(seccionMap.values());
-
+		List<PlanSeccionDTO> list = new ArrayList<PlanSeccionDTO>(seccionMap.values());
+		Collections.sort(list);
+		for(PlanSeccionDTO seccion : list) {
+			System.out.println(seccion);
+			Collections.sort(seccion.getItemsList());
+			for(PlanItemDTO item : seccion.getItemsList()) {
+				System.out.println(item);
+				Collections.sort(item.getSubitemsList());
+				for(PlanItemDTO subitem : item.getSubitemsList()) {
+					System.out.println(subitem);
+				}
+			}
+		}
+		
+		return list;
 	}
 
 }

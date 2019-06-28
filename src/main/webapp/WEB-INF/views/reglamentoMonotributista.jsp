@@ -90,7 +90,7 @@
 						El beneficiario podr&aacute; optar por un Plan de beneficios superiores en cualquier momento, cumplimentando la respectiva solicitud.
 						No obstante, para el acceso a dichos beneficios superiores, deber&aacute; mediar la aceptaci&oacute;n expresa de OSDEPYM y el pago de las
 						cuotas adicionales que en cada caso se establezcan, conservando mientras tanto los servicios y beneficios del plan anterior. El
-						cambio de plan registrado es para todo el grupo familiar, no pudiendo ning&uacute;n miembro de dicho grupo tener un plan diferente
+						cambio de plan registrado es para todo el grupo familiar, no pudiendo ning&uacute;n miembro de dicho grupo tener un plan diferente.
 					</li>
 					<li><i>Acceso progresivo a las prestaciones en internaci&oacute;n (Cl&iacute;nica o Quir&uacute;rgica) en el Plan Superior.</i>
 						<ol>
@@ -122,7 +122,7 @@
 			<div class="content-reglamento">
 				El beneficiario deber&aacute; respetar las normas generales de admisi&oacute;n, funcionamiento y horarios, seguir los procedimientos que
 				tengan establecidos para la atenci&oacute;n de sus pacientes, los profesionales e instituciones contratados por OSDEPYM para brindarle
-				los servicios comprometidos. No ser&aacute; responsabilidad de OSDEPYM la demora en la atenci&oacute;n u otros inconvenientes que puedan
+				los servicios comprometidos. No ser&aacute; responsabilidad de OSDEPYM la demora en la atenci&oacute;n u otros inconvenientes que puedan.
 			</div>
 		</li>
 	</ol>		

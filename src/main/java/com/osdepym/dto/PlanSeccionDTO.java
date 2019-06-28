@@ -2,7 +2,7 @@ package com.osdepym.dto;
 
 import java.util.List;
 
-public class PlanSeccionDTO {
+public class PlanSeccionDTO implements Comparable<PlanSeccionDTO> {
 	private Long id;
 	private String title;
 	private String subtitle;
@@ -41,4 +41,14 @@ public class PlanSeccionDTO {
 	public void setId(Long id) {
 		this.id = id;
 	}
+	
+	@Override
+    public int compareTo(PlanSeccionDTO dto) {
+        return Long.compare(this.id,dto.id);
+    }
+
+    @Override
+    public String toString() {
+        return "Seccion: [id=" + id + ", title=" + title + ", subtitle=" + subtitle + "]";
+    }
 }

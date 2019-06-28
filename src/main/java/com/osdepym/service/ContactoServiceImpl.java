@@ -168,7 +168,11 @@ public class ContactoServiceImpl implements ContactoService {
 			session = this.sessionFactory.getCurrentSession();
 			tx = session.beginTransaction();
 
-			String correo = getMailByIds(Long.valueOf(contactoForm.getIdMotivo()), Long.valueOf(contactoForm.getIdCategoria()));
+			String correo = null;
+			if (contactoForm.getIdCategoria() != null && !contactoForm.getIdCategoria().equals(""))
+				correo = getMailByIds(Long.valueOf(contactoForm.getIdMotivo()), Long.valueOf(contactoForm.getIdCategoria()));
+			else
+				correo = getMailByIds(Long.valueOf(contactoForm.getIdMotivo()), null);
 			String motivo = getMotivoById(Long.valueOf(contactoForm.getIdMotivo()));
 			String categoria = null;
 			if (contactoForm.getIdCategoria() != null && !contactoForm.getIdCategoria().equals(""))

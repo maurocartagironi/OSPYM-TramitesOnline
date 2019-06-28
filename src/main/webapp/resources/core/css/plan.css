@@ -1,22 +1,22 @@
 .title-item {
 	line-height: 1.5;
-	width: 75%;
+	width: 65%;
 	display: list-item;
 }
 		
 .title-subitem {
 	line-height: 1.5;
-	width: 75%;
+	width: 65%;
 	display: list-item;
 	margin-left: 5%;
 }
 
 .value-item {
-	width: 25%;
+	width: 35%;
 }
 		
 .value-subitem {
-	width: 25%;
+	width: 35%;
 }
 
 @media (max-width: 768px) {

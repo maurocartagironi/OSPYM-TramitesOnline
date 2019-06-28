@@ -107,6 +107,7 @@ public class MotivoCategoriaDAOImpl implements MotivoCategoriaDAO {
 			Query query = session.createNativeQuery(sqlString);
 			mail = query.getSingleResult().toString();
 		} catch (Exception e) {
+			System.out.println("No se ha encontrado un email asociado.");
 			e.printStackTrace();
 			throw new CustomException(e.getMessage(), ErrorMessages.DATABASE_GET_ERROR);
 		}
